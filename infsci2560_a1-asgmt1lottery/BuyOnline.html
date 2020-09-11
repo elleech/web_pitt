@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>$$Buy$$</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="headline">
+      <h1>I ♥ LOTTERY</h1>
+    </div>
+
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="MegaMillions.html">MegaMillions</a>
+      <a href="PowerBall.html">PowerBall</a>
+      <a href="#">Buy Online!</a>
+      <a href="AboutMe.html">About Me</a>
+    </nav>
+
+    <table id="buy">
+      <tr>
+        <th>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FLogoMegaMillions.svg.png?v=1580429577612"
+            alt="Mega Millions"
+            style="height:150px;"
+          />
+        </th>
+        <th>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FLogoPowerBall.png?v=1580429574340"
+            alt="PowerBall"
+            style="height:65px;"
+          />
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          <p>
+            If you are a resident of Georgia, Illinois, Kentucky, Michigan, New
+            Hampshire, North Carolina, North Dakota or Pennsylvania, you may buy
+            Mega Millions tickets online by registering with the lotteries of
+            those states. You may also purchase subscriptions for Mega Millions
+            online in New York and Virginia. You must be residents of these
+            states to participate in these purchase options.
+          </p>
+        </td>
+        <td>
+          <p>
+            Some lotteries sell Powerball tickets over the Internet, but the
+            service is only available to residents of that jurisdiction. The
+            sale of Powerball tickets over the Internet or by mail across
+            jurisdictional borders is restricted. Lotteries may refuse to pay
+            out prize money on Powerball tickets purchased on any website other
+            than their own.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <a
+            href="https://www.pailottery.com/games/all-games/mega-millions/play/draw-game/"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fbuynow.png?v=1580622819522"
+              alt="Buy Mega Millions Online"
+              style="height:70px"
+              align="right"
+            />
+          </a>
+          <button type="button" id="randmm" onclick="gen_randMM()">
+            Random Generator
+          </button>
+          <input type="text" id="showrandmm" value="" /><br />
+          <button
+            type="button"
+            id="randmm_weighted"
+            onclick="randMM_weighted()"
+          >
+            Weighted Generator
+          </button>
+          <input type="text" id="showrandmm_weighted" value="" />
+        </td>
+        <td>
+          <a
+            href="https://www.pailottery.com/games/all-games/power-ball/play/draw-game/"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fbuynow.png?v=1580622819522"
+              alt="Buy PowerBall Online"
+              style="height:70px"
+              align="right"
+            />
+          </a>
+          <button type="button" id="randpb" onclick="gen_randPB()">
+            Random Generator
+          </button>
+          <input type="text" id="showrandpb" value="" /><br />
+          <button
+            type="button"
+            id="randpb_weighted"
+            onclick="randPB_weighted()"
+          >
+            Weighted Generator
+          </button>
+          <input type="text" id="showrandpb_weighted" value="" />
+        </td>
+      </tr>
+    </table>
+
+    <p style="text-align:center; font-size: 0.8rem;">
+      <em
+        >* The "Buy Now" links are for residents of
+        <strong>Pennsylvania</strong>. *</em
+      ><br />
+      <em
+        >** If you win by the numbers this website provides, please do hit
+        <span class="am">$ DONATE HERE $</span>, please. **</em
+      ><br />
+      <em>*** Play rationally and responsibly! ***</em>
+    </p>
+
+    <footer>
+      <div class="footer">
+        <a
+          href="mailto:yec24@pitt.edu"
+          style="color: gold !important; text-decoration:none !important;"
+          >$ DONATE HERE $</a
+        >
+      </div>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

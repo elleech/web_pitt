@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>$$MegaMillions$$</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <!--Load the AJAX API-->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  </head>
+  <body>
+    <div class="headline">
+      <h1>I ♥ LOTTERY</h1>
+    </div>
+
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="#">MegaMillions</a>
+      <a href="PowerBall.html">PowerBall</a>
+      <a href="BuyOnline.html">Buy Online!</a>
+      <a href="AboutMe.html">About Me</a>
+    </nav>
+
+    <h2>
+      How to Play?
+    </h2>
+    <ol>
+      <li>
+        Take out your 2 dollars.
+      </li>
+      <li>
+        Pick <span class="mm0">five</span> white balls from nubmer
+        <span class="mm1">1</span> to <span class="mm1">70</span>, and
+        <span class="mm0">one</span> gold ball from number
+        <span class="mm1">1</span> to <span class="mm1">25</span>.
+      </li>
+    </ol>
+
+    <h2>
+      How to Win?
+    </h2>
+    <table id="win">
+      <tr>
+        <th>Match</th>
+        <th>Prize*</th>
+        <th>Odds</th>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballGold.png?v=1580429560311"
+            alt="Gold Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>Jackpot</td>
+        <td>1 in 302,575,350</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$1,000,000</td>
+        <td>1 in 12,607,306</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballGold.png?v=1580429560311"
+            alt="Gold Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$10,000</td>
+        <td>1 in 931,001</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$500</td>
+        <td>1 in 38,792</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballGold.png?v=1580429560311"
+            alt="Gold Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$200</td>
+        <td>1 in 14,547</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$10</td>
+        <td>1 in 606</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballGold.png?v=1580429560311"
+            alt="Gold Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$10</td>
+        <td>1 in 693</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballWhite.png?v=1580429563502"
+            alt="White Ball"
+            style="height:30px;"
+          />
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballGold.png?v=1580429560311"
+            alt="Gold Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$4</td>
+        <td>1 in 89</td>
+      </tr>
+
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2FballGold.png?v=1580429560311"
+            alt="Gold Ball"
+            style="height:30px;"
+          />
+        </td>
+        <td>$2</td>
+        <td>1 in 37</td>
+      </tr>
+    </table>
+
+    <p align="center" style="font-size: 0.8rem;">
+      <em
+        >* In California, all prizes are pari-mutuel, meaning payouts are based
+        on sales and the number of winners.<br />
+        All other Mega Millions states set the 2nd through 9th prizes at
+        pre-determined amounts. *<br />
+        ** The overall odds of winning a prize are 1 in 25. **</em
+      >
+    </p>
+
+    <h2>
+      The Stats
+    </h2>
+    <ul>
+      This is based on a total of 235 draws from October 31st 2017 to January
+      28th 2020.<br />
+      <em
+        >(In October 2017 the main ball pool reduced from 75 to 70, while the
+        Mega Ball number pool grew from 15 to 25.)</em
+      >
+      <li>
+        <h3>
+          Main Ball (White)
+        </h3>
+        <ul>
+          <li>
+            Visualized chart (<u>please select order</u>)
+            <input type="radio" name="mmw" value="mmw8num" />
+            <label for="mmw8num">by number</label>
+            <input type="radio" name="mmw" value="mmw8freq" />
+            <label for="mmw8freq">by freqency</label>
+          </li>
+
+          <!-- draw Google Chart -->
+          <div id="chart_mm_w"></div>
+          <br />
+          <li>High frequency balls</li>
+          <table id="mm_w_high_freq">
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_31.png?v=1580528893616"
+                alt="White Ball Number 31"
+                style="height:50px;"
+              />
+            </td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_62.png?v=1580528899248"
+                alt="White Ball Number 62"
+                style="height:50px;"
+              />
+            </td>
+            <td></td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_10.png?v=1580529258068"
+                alt="White Ball Number 10"
+                style="height:50px;"
+              />
+            </td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_14.png?v=1580529262033"
+                alt="White Ball Number 14"
+                style="height:50px;"
+              />
+            </td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_17.png?v=1580529264217"
+                alt="White Ball Number 17"
+                style="height:50px;"
+              />
+            </td>
+            <td></td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_04.png?v=1580529703179"
+                alt="White Ball Number 4"
+                style="height:50px;"
+              />
+            </td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_42.png?v=1580529707323"
+                alt="White Ball Number 42"
+                style="height:50px;"
+              />
+            </td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_48.png?v=1580529709789"
+                alt="White Ball Number 48"
+                style="height:50px;"
+              />
+            </td>
+          </table>
+        </ul>
+      </li>
+      <li>
+        <h3>
+          MegaBall (Gold)
+        </h3>
+        <ul>
+          <li>
+            Visualized chart (<u>please select order</u>)
+            <input type="radio" name="mmg" value="mmg8num" />
+            <label for="mmg8num">by number</label>
+            <input type="radio" name="mmg" value="mmg8freq" />
+            <label for="mmg8freq">by freqency</label>
+          </li>
+
+          <!-- draw Google Chart -->
+          <div id="chart_mm_g"></div>
+          <br />
+          <li>High frequency balls</li>
+          <table id="mm_g_high_freq">
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_g11.png?v=1580531388661"
+                alt="Gold Ball Number 11"
+                style="height:50px;"
+              />
+            </td>
+            <td></td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_g9.png?v=1580531391202"
+                alt="Gold Ball Number 9"
+                style="height:50px;"
+              />
+            </td>
+            <td></td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_g10.png?v=1580531393968"
+                alt="Gold Ball Number 10"
+                style="height:50px;"
+              />
+            </td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_g20.png?v=1580531398304"
+                alt="Gold Ball Number 20"
+                style="height:50px;"
+              />
+            </td>
+            <td>
+              <img
+                src="https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fball_g22.png?v=1580531400424"
+                alt="Gold Ball Number 22"
+                style="height:50px;"
+              />
+            </td>
+          </table>
+        </ul>
+      </li>
+    </ul>
+
+    <footer>
+      <div class="footer">
+        <a
+          href="mailto:yec24@pitt.edu"
+          style="color: gold !important; text-decoration:none !important;"
+          >$ DONATE HERE $</a
+        >
+      </div>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background: rgba(176, 224, 230, 0.8);
+  margin: 2em;
+  font-family: helvetica, arial, sans-serif;
+}
+
+p {
+  font-family: helvetica, arial, sans-serif;
+}
+
+div.headline {
+  height: 150px;
+  background: url("https://cdn.glitch.com/1005f9b0-16ba-423d-b17f-aa9cfef6e0a7%2Fsharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg?v=1580353575159");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+div.headline h1 {
+  color: rgb(152, 251, 152);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-stretch: ultra-expanded;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 2px 2px 2px blue;
+  padding: 2.5rem;
+}
+
+nav.navigation {
+  background-color: teal;
+  overflow: hidden;
+}
+
+nav.navigation a {
+  float: left;
+  display: block;
+  color: yellow;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+}
+
+nav.navigation a:hover {
+  background-color: rgba(70, 130, 180, 0.5);
+  color: gold;
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(139, 0, 0, 0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intro th,
+td {
+  vertical-align: center;
+  border-bottom: 0.8px solid black;
+  text-align: left;
+}
+
+#intro th {
+  background: rgba(250, 250, 210, 0.5);
+}
+
+#intro td:nth-child(1) {
+  width: 200px;
+}
+
+#intro td:nth-child(2) {
+  width: 250px;
+}
+
+#intro td:nth-child(3) {
+  width: 200px;
+}
+
+#intro td:nth-child(4) {
+  width: 150px;
+}
+
+#intro td:nth-child(5) {
+  width: 350px;
+}
+
+#win th,
+td {
+  vertical-align: center;
+  border-bottom: 0.8px solid black;
+  text-align: left;
+}
+
+#win th {
+  background: rgba(250, 250, 210, 0.5);
+}
+
+#win td:nth-child(1) {
+  width: 300px;
+}
+
+#win td:nth-child(2) {
+  width: 150px;
+}
+
+#win td:nth-child(3) {
+  width: 200px;
+}
+
+#mm_w_high_freq {
+  margin-left: 0px;
+}
+
+#mm_w_high_freq td {
+  vertical-align: center;
+  border-bottom: none;
+  text-align: center;
+  width: 50px;
+}
+
+#mm_g_high_freq {
+  margin-left: 0px;
+}
+
+#mm_g_high_freq td {
+  vertical-align: center;
+  border-bottom: none;
+  text-align: center;
+  width: 50px;
+}
+
+#pb_w_high_freq {
+  margin-left: 0px;
+}
+
+#pb_w_high_freq td {
+  vertical-align: center;
+  border-bottom: none;
+  text-align: center;
+  width: 50px;
+}
+
+#pb_r_high_freq {
+  margin-left: 0px;
+}
+
+#pb_r_high_freq td {
+  vertical-align: center;
+  border-bottom: none;
+  text-align: center;
+  width: 50px;
+}
+
+#buy td {
+  vertical-align: top;
+  border-bottom: none;
+  width: 500px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+#about td {
+  border-bottom: none;
+  text-align: left;
+}
+
+#about td:nth-child(1) {
+  vertical-align: center;
+  width: 300px;
+}
+
+#about td:nth-child(2) {
+  vertical-align: top;
+  width: 700px;
+}
+
+.am {
+  background-color: rgba(139, 0, 0, 0.8);
+  color: gold;
+}
+
+.mm0 {
+  color: blue;
+  font-weight: bold;
+  text-shadow: 0.8px 0.8px white;
+}
+
+.mm1 {
+  color: orange;
+  font-weight: bold;
+  text-shadow: 0.8px 0.8px white;
+}
+
+.pb0 {
+  color: blue;
+  font-weight: bold;
+  text-shadow: 0.8px 0.8px white;
+}
+
+.pb1 {
+  color: red;
+  font-weight: bold;
+  text-shadow: 0.8px 0.8px white;
+}
