@@ -1,0 +1,46 @@
+.intersect {
+  background: url("https://vectr.com/yec24/a2FiaGeku5.svg?width=640&height=640&select=a2FiaGeku5page0");
+  background-size: 100%;
+  cursor: pointer;
+  border: none;
+  margin-top: -3px;
+  height: 45px;
+  width: 45px;
+}
+
+.intersect.whiteStone {
+  background: url("https://vectr.com/yec24/dNXrBQAMr.svg?width=640&height=640&select=dNXrBQAMrpage0");
+  background-size: 100%;
+}
+
+.intersect.blackStone {
+  background: url("https://vectr.com/yec24/a2J40AMlSP.svg?width=640&height=640&select=a2J40AMlSPpage0");
+  background-size: 100%;
+}
+
+.intersect:focus {
+  outline: none;
+}
+
+.kbd-navigation .intersect:focus {
+  background: #ddd;
+}
+
+/*
+.intersect {
+  background: red;
+  height: 50px;
+  position: relative;
+  width: 2px;
+}
+
+.intersect:after {
+  background: black;
+  content: "";
+  height: 2px;
+  left: -25px;
+  position: absolute;
+  top: 25px;
+  width: 50px;
+}
+*/
