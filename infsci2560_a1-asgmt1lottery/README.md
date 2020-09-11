@@ -2,7 +2,7 @@
 
 My very first website which displays two US lottery games - MegaMillions and PowerBall - and shows number drawing frequencies by the help of python and Google Chart API. It also picks random weighted numbers for users as a reference of buying thier next lottery tickets!
 
-Tool: HTML, CSS, and JavaScript
+Tools: HTML, CSS, and JavaScript
 
 # View Here -> [https://elleech.github.io/infsci2560_a1-asgmt1lottery/](https://elleech.github.io/infsci2560_a1-asgmt1lottery/)
 
