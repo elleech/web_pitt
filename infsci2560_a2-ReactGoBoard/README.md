@@ -34,8 +34,6 @@ I have 3 components in total (listed from the top of the hierarchy to the bottom
 **All components must have a `render()` function to actually make that component work.**
 For example, in _game_, it renders (a) the board, (b) 2 buttons for player to pass or undo, (c) a switch that activates remove, and (d) some text information so user can play with.
 
-============================================================
-
 ## Instructions
 
 The goal of this assignment is to create a functional Go board using React. This means you will create an interactive, graphical user interface using HTML, CSS, and JavaScript that allows two people to play Go in the browser. You are not required or expected to implement the logic of Go the game. Rather, you must implement the characteristics and constraints of a physical Go board with rules that enforce the rules of an actual Go board (not allowing players to place two stones on an intersection).
@@ -69,16 +67,6 @@ You should use [Bootstrap CSS](https://getbootstrap.com/) for styling your compo
 You can build on the [React Tic Tac Toe tutorial](https://reactjs.org/tutorial/tutorial.html).
 
 [Here is an example of the Tic Tac Toe application running in Glitch](https://glitch.com/~pitt-infsci-2560-tic-tac-toe)
-
-# What to hand in
-
-- You should implement your React Go Board on Glitch.
-  - Make sure to rename the project to something like <pittid>-assignment-2
-- Document your design decisions in the README.md file.
-  - Provide written description of how you implemented the Go board in React. Discuss the components, state management, and handler functions you implemented, why you implemented the application the way you did, and any alternatives you may have considered. Also document any additional functionality you add to your React Go Board application.
-- Submit the link to your Glitch project on Canvas.
-
-============================================================
 
 # React Starter App
 
