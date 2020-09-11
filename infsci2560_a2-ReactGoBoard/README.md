@@ -4,7 +4,7 @@ My first React app of creating a [Go game](<https://en.wikipedia.org/wiki/Go_(ga
 
 Tools: React.js and Bootstrap
 
-# View Here ->
+# View Here -> [https://elleech.github.io/infsci2560_a2-ReactGoBoard/](https://elleech.github.io/infsci2560_a2-ReactGoBoard/)
 
 ### Documentation of Design Decisions
 
