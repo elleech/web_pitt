@@ -4,7 +4,7 @@ My very first website which displays 2 US lottery games - MegaMillions and Power
 
 Tool: HTML, CSS, and JavaScript
 
----
+# View Here -> [https://elleech.github.io/infsci2560_a1-asgmt1lottery/](https://elleech.github.io/infsci2560_a1-asgmt1lottery/)
 
 In this assignment, you will build upon the activities from weeks 1, 2, and 3. Your task is to hand-code a website using HTML, CSS, and Javascript. You must code everything from scratch using vanilla HTML, CSS and JavaScript. No templates or frameworks are allowed in this assignment (save that for assignment two). You are free to Google around for "How do I do X in HTML/CSS/JavaScript." If you find a solution to a particular problem, be sure to include this information in the Coversheet for this assignment.
 
