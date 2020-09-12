@@ -1,0 +1,141 @@
+<!-- this is for "/api/search" -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Hello! World</title>
+
+    <!-- Font Awesome icons (free version) -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Third party plugin CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- a safety net when core theme css not working -->
+    <!-- not sure why this ejs suddenly can't load core css... I need to do style inline ugh -->
+    <!-- Bootstrap -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Flag-Icon-CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="background: #ffffff">
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-3"
+      id="mainNav"
+      style="
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #bec7d0;
+        transition: background-color 0.2s ease;
+      "
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="../"
+          style="color: #6c757d; font-weight: 700"
+          onMouseOver="this.style.color='#f8f9fa'"
+          onMouseOut="this.style.color='#6c757d'"
+          >Hello! World (｡◕∀◕｡)</a
+        >
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link disabled text-secondary"
+                >You're now in Search</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section" style="padding: 8rem 0">
+      <div class="container text-secondary">
+        <h2 class="text-dark mt-0">You're searching for <%= query %>...</h2>
+
+        <!-- case 1: if query is a name of a country -> return matched data in Countries and Cities -->
+        <% if (msg === "country") { %>
+        <p>We've found 1 data in the Countries:</p>
+        <p>
+          <%= country.country %> (<%= country.code %>)&nbsp;&nbsp;&nbsp;&nbsp;
+          Calling Code: <%= country.callingCode %>&nbsp;&nbsp;&nbsp;&nbsp;
+          Population Density: <%= country.populationDensity %>
+          (pop/km2)&nbsp;&nbsp;&nbsp;&nbsp; Time Zone: <%= country.timeZone
+          %>&nbsp;&nbsp;&nbsp;&nbsp; Currency: <%= country.currency %>
+        </p>
+
+        <% if (cities) { %>
+        <p>and <%= cities.length %> data in the Cities:</p>
+        <p>
+          <% cities.forEach(c => { %> <%= c.city %>&nbsp;&nbsp;&nbsp;&nbsp;
+          Country: <%= c.country %>&nbsp;&nbsp;&nbsp;&nbsp; Attraction: <%=
+          c.attraction %><br />
+          <% }) %>
+        </p>
+        <% } %>
+
+        <!-- case 2: if query is a name of a city -> return matched data in Cities -->
+        <% } else if (msg === "city") { %>
+        <p>We've found 1 data in the Cities:</p>
+        <p>
+          <%= city.city %>&nbsp;&nbsp;&nbsp;&nbsp; Country: <%= city.country
+          %>&nbsp;&nbsp;&nbsp;&nbsp; Attraction: <%= city.attraction %>
+        </p>
+
+        <!-- case 3: if query is not in any database -> return ? -->
+        <% } else { %>
+        <p>Sorry, <%= query %> is not yet in your database.</p>
+        <% } %>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-light py-5"></footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="script.js"></script>
+  </body>
+</html>
