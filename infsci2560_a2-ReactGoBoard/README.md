@@ -92,8 +92,6 @@ For the project to build, these files must exist with exact filenames:
 - `src/index.js` is the JavaScript entry point.
   You can delete or rename the other files.
 
-`watch.json` - The [watch.json](https://glitch.com/help/restart/) file in this project configures Glitch to use optimal install and restart rules for developing React apps.
-
 ## Available Scripts
 
 ### `npm test`
