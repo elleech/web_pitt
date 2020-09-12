@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, world!</title>
+  </head>
+  
+  <body>
+    <p>
+      You've requested to see <%= id %>...
+    </p>
+    
+    <p>
+      <% for (let country of countries) { %>
+        <% if (id == country.id) { %>
+          <%= country.country %> <br /><br />
+          Calling Code: <%= country.callingCode %> <br />
+          Population Density: <%= country.populationDensity %> (pop/km2) <br />
+          Time Zone: <%= country.timeZone %> <br />
+          Currency: <%= country.currency %>
+        <% } %>
+      <% } %>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+    />
+
+    <title>Hello, world!</title>
+
+    <!-- Styles sheet -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <ul class="nav nav-tabs" style="padding-top: 1rem">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./api">Database</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./api/countries">Countries</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./api/cities">Cities</a>
+        </li>
+      </ul>
+
+      <nav class="navbar navbar-light" style="background-color: #f0f8ff">
+        <div class="navbar-brand">
+          <h4>API DOCUMENTATION</h4>
+        </div>
+      </nav>
+
+      <table class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Operations</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>GET&nbsp;&nbsp;&nbsp;&nbsp;/api</td>
+            <td>Get data from database (countries + cities)</td>
+          </tr>
+
+          <tr>
+            <th scope="row">2</th>
+            <td>GET&nbsp;&nbsp;&nbsp;&nbsp;/api/countries</td>
+            <td>Get data from countries</td>
+          </tr>
+
+          <tr>
+            <th scope="row">3</th>
+            <td>GET&nbsp;&nbsp;&nbsp;&nbsp;/api/countries/:id</td>
+            <td>
+              Get data from countries by the given ID (choices of country ID:
+              TW, US, EG, SN, DE, TR, ZA, NZ, BO)
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">4</th>
+            <td>GET&nbsp;&nbsp;&nbsp;&nbsp;/api/cities</td>
+            <td>Get data from cities</td>
+          </tr>
+
+          <tr>
+            <th scope="row">5</th>
+            <td>GET&nbsp;&nbsp;&nbsp;&nbsp;/api/countries/:id/cities</td>
+            <td>Get data from cities with the given ID of country</td>
+          </tr>
+
+          <tr>
+            <th scope="row">6</th>
+            <td>POST&nbsp;&nbsp;&nbsp;&nbsp;/api/countries</td>
+            <td>
+              Create data to countries (should include "id", "country",
+              "callingCode", "populationDensity", "timeZone" and "currency")<br />
+              example:<br />
+              {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"id": "WL",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"country": "Wonderland",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"callingCode": "+666",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"populationDensity": 0,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"timeZone": "UTC+13:00",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"currency": "WLD"<br />
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">7</th>
+            <td>POST&nbsp;&nbsp;&nbsp;&nbsp;/api/cities</td>
+            <td>
+              Create data to cities (should include "country", "city" and
+              "attraction") example:<br />
+              {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"country": "Wonderland",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"city": "Shangri-La",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"attraction": "Sukhavati"<br />
+              }
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">8</th>
+            <td>PUT&nbsp;&nbsp;&nbsp;&nbsp;/api/countries/:id</td>
+            <td>Update data to countries by the given ID</td>
+          </tr>
+
+          <tr>
+            <th scope="row">9</th>
+            <td>DELETE&nbsp;&nbsp;&nbsp;&nbsp;/api/countries/:id</td>
+            <td>Delete data from countries by the given ID</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

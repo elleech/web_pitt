@@ -1,0 +1,74 @@
+[
+  {
+    "id": "TW",
+    "country": "Taiwan",
+    "callingCode": "+886",
+    "populationDensity": 704,
+    "timeZone": "UTC+08:00",
+    "currency": "TWD"
+  },
+  {
+    "id": "US",
+    "country": "United States",
+    "callingCode": "+1",
+    "populationDensity": 36,
+    "timeZone": "UTC-10:00 to -05:00",
+    "currency": "USD"
+  },
+  {
+    "id": "EG",
+    "country": "Egypt",
+    "callingCode": "+20",
+    "populationDensity": 98,
+    "timeZone": "UTC+02:00",
+    "currency": "EGP"
+  },
+  {
+    "id": "SG",
+    "country": "Singapore",
+    "callingCode": "+65",
+    "populationDensity": 7916,
+    "timeZone": "UTC+08:00",
+    "currency": "SGD"
+  },
+  {
+    "id": "DE",
+    "country": "Germany",
+    "callingCode": "+49",
+    "populationDensity": 237,
+    "timeZone": "UTC+01:00",
+    "currency": "EUR"
+  },
+  {
+    "id": "TR",
+    "country": "Turkey",
+    "callingCode": "+90",
+    "populationDensity": 105,
+    "timeZone": "UTC+03:00",
+    "currency": "TRY"
+  },
+  {
+    "id": "ZA",
+    "country": "South Africa",
+    "callingCode": "+27",
+    "populationDensity": 47,
+    "timeZone": "UTC+02:00",
+    "currency": "ZAR"
+  },
+  {
+    "id": "NZ",
+    "country": "New Zealand",
+    "callingCode": "+64",
+    "populationDensity": 18,
+    "timeZone": "UTC+12:00",
+    "currency": "NZD"
+  },
+  {
+    "id": "BO",
+    "country": "Bolivia",
+    "callingCode": "+591",
+    "populationDensity": 10,
+    "timeZone": "UTC-04:00",
+    "currency": "BOB"
+  }
+]

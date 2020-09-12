@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, world!</title>
+  </head>
+  
+  <body>
+    <p>
+      You've requested to see the cities in <%= id %>...
+    </p>
+    
+    <% for (let country of countries) { %>
+      <% if (id == country.id) { %>
+        <% var countryName = country.country; %>
+      <% } %>
+    <% } %>
+
+    <%= countryName %>
+
+    <% for (let city of cities) { %>
+      <% if (countryName == city.country) { %>
+        <p>
+          City: <%= city.city %> <br />
+          Attraction: <%= city.attraction %>
+        </p>
+      <% } %>
+    <% } %>
+  </body>
+</html>

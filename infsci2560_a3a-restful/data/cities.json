@@ -1,0 +1,86 @@
+[
+  { "country": "Taiwan", 
+    "city": "Hualien", 
+    "attraction": "Taroko Gorge" 
+  },
+  {
+    "country": "United States",
+    "city": "Page, Arizona",
+    "attraction": "Antelope Canyon"
+  },
+  {
+    "country": "United States",
+    "city": "Columbia Falls, Montana",
+    "attraction": "Glacier National Park"
+  },
+  {
+    "country": "Egypt",
+    "city": "Giza",
+    "attraction": "Pyramid of Khufu"
+  },
+  {
+    "country": "Singapore",
+    "city": "Singapore",
+    "attraction": "Gardens by the Bay"
+  },
+  {
+    "country": "Germany",
+    "city": "Hohenschwangau",
+    "attraction": "Neuschwanstein Castle"
+  },
+  {
+    "country": "Germany",
+    "city": "Cologne",
+    "attraction": "Cologne Cathedral"
+  },
+  {
+    "country": "Turkey",
+    "city": "Istanbul",
+    "attraction": "Sultan Ahmed Mosque"
+  },
+  {
+    "country": "Turkey",
+    "city": "Denizli",
+    "attraction": "Pamukkale"
+  },
+  {
+    "country": "Turkey",
+    "city": "Derinkuyu",
+    "attraction": "Derinkuyu underground city"
+  },
+  {
+    "country": "South Africa",
+    "city": "Simon's Town",
+    "attraction": "Boulders Beach"
+  },
+  {
+    "country": "South Africa",
+    "city": "Port Elizabeth",
+    "attraction": "Addo Elephant National Park"
+  },
+  {
+    "country": "New Zealand",
+    "city": "Fiordland",
+    "attraction": "Milford Sound"
+  },
+  {
+    "country": "New Zealand",
+    "city": "Mackenzie",
+    "attraction": "Lake Tekapo"
+  },
+  {
+    "country": "New Zealand",
+    "city": "Matamata",
+    "attraction": "Hobbiton Movie Set"
+  },
+  {
+    "country": "Bolivia",
+    "city": "Daniel Campos",
+    "attraction": "Salar de Uyuni"
+  },
+  {
+    "country": "Bolivia",
+    "city": "Potosi",
+    "attraction": "Laguna Colorada"
+  }
+]
