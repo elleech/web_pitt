@@ -8,6 +8,6 @@ University of Pittsburgh, 2020 spring
 
 - [**Assignment 3a - restful**](https://github.com/elleech/web_pitt/tree/master/infsci2560_a3a-restful): Made by Express.js, EJS (Embedded JavaScript), and Bootstrap
 
-- **Assignment 3b**:
+- [**Assignment 3b - HelloWorld**](https://github.com/elleech/web_pitt/tree/master/infsci2560_a3b-HelloWorld): Made by Express.js, EJS (Embedded JavaScript), Bootstrap, and MongoDB Atlas
 
 - **Final Project**:
