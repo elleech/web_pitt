@@ -1,8 +1,8 @@
 ## Assignment 3 Part B - Database Your RESTful API
 
-The final RESTful website of countries and cities.
+The final RESTful website of countries and cities, using MongoDB as its database.
 
-Tools: Express.js, EJS (Embedded JavaScript), and Bootstrap
+Tools: Express.js, EJS (Embedded JavaScript), Bootstrap, and MongoDB Atlas
 
 _P.S. I don't own any photos of this website. They are resources from the Internet._
 
