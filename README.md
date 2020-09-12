@@ -10,4 +10,4 @@ University of Pittsburgh, 2020 spring
 
 - [**Assignment 3b - HelloWorld**](https://github.com/elleech/web_pitt/tree/master/infsci2560_a3b-HelloWorld): Made by Express.js, EJS (Embedded JavaScript), Bootstrap, and MongoDB Atlas
 
-- **Final Project**:
+- [**Final Project - WebArticles**](https://github.com/elleech/web_pitt/tree/master/infsci2560_fp-WebArticles): Made by Express.js, Passport.js, EJS (Embedded JavaScript), Bootstrap, and MongoDB Atlas
