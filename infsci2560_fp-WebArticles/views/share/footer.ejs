@@ -1,0 +1,57 @@
+    <!--
+    <footer class="bg-secondary" style="padding-top: 1rem; padding-bottom: 1rem">
+      <div class="container text-center text-light">
+        made by TEAMNO1
+      </div>
+    </footer>
+    -->
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- location API -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzh2ZjkeH2Yi7JMEqSkYcgQxCVeLoQpZA"></script>
+
+    <script>
+      function showLocation(position) {
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        let latLngData = position.coords.latitude.toFixed(6) + "," + position.coords.longitude.toFixed(6);
+        let geocoder  = new google.maps.Geocoder();
+        let location  = new google.maps.LatLng(latitude, longitude); 
+        geocoder.geocode({'latLng': location}, function (results, status) {
+          if(status == google.maps.GeocoderStatus.OK) { 
+            let add=results[0].formatted_address; 
+            $("#address").val(add);
+            $("#realSubmit").click();
+          }
+        });
+      }
+      
+      function errorHandler(err) {
+          if(err.code == 1) {
+              alert("Error: Access is denied!");
+          }else if( err.code == 2) {
+              alert("Error: Position is unavailable!");
+          }
+      }
+      
+      // getLocation() function just mess up the ids in oneBlog.ejs
+      function getLocation(){
+          if(navigator.geolocation){
+              let options = {timeout:60000};
+              navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
+          } else {
+              alert("Sorry, browser does not support geolocation!");
+          }
+      }
+      /*
+      $('#___customId here___').click(getLocation);
+      */
+    </script>
+  </body>
+</html>

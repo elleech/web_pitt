@@ -1,0 +1,44 @@
+body {
+  background-image: url("../brandi-redd-aJTiW00qqtI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#blog-card {
+  display: inline-block;
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 10px;
+  background-color: rgb(213, 218, 215);
+  box-shadow: 7px 7px 5px grey;
+  font-family: "Georgia";
+}
+.card-title {
+  font-weight: bold;
+}
+
+#one-blog {
+  font-family: "Georgia";
+}
+
+#blog-title {
+  font-weight: bold;
+}
+
+.blog-form {
+  margin-top: 100px;
+  background-color: rgb(213, 218, 215);
+  padding: 20px;
+  box-shadow: 7px 7px 5px grey;
+}
+#search-card {
+  display: inline-block;
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 10px;
+  background-color: rgb(213, 218, 215);
+  box-shadow: 7px 7px 5px grey;
+  font-family: "Georgia";
+}

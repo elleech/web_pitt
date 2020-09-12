@@ -1,0 +1,108 @@
+<!-- Chuanlu -->
+
+<html>
+    <head>
+        <title>WebArticles</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheet/blogs.css">
+    </head>
+    <body>
+
+<% include ../share/header %>
+
+<div class="container blog-form" >
+  <h2 class="newBlog-header" style="text-align:center;padding-top:20px">Create a New Blog</h1>
+  
+  
+  <!--Form to get user input-->
+  <form action="/blogs" method="POST">
+    <div class="form-row">
+      <div class="form-group col-md-6" >
+        <label for="title">Blog Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Enter title" name="title" required>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="form-check-label" for="addresscheck" name="addresscheck">Show my address on blog</label>&nbsp;&nbsp;
+      <input type="radio" name="addresscheck" value="yes"> Yes&nbsp;
+      <input type="radio" name="addresscheck" value="no" checked> No    
+    </div>
+    
+    <div class="form-group">
+      <label for="image">Blog Image</label>
+      <input type="text" class="form-control" id="image" placeholder="Enter image url" name="image" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="description">Blog Text</label>
+      <textarea class="form-control" id="description" placeholder="Enter blog text" name="description" style="height: 300px;" required></textarea>
+    </div>
+    
+    <div class="form-group" style="display: none;">
+      <input type="text" id="address" name="address" value="Location Unknown">
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group" style="padding:20px">
+        <button id="test" class="btn btn-info btn-block" type="button">Submit</button>
+      </div>
+      
+      <div class="form-group" style="display: none;">
+        <button id="realSubmit" class="btn btn-primary btn-block" type="submit">Submit!</button>
+      </div>
+      
+      <div style="padding:20px">
+        <a href="/blogs/"><button class="btn btn-secondary btn-block" type="button" >Go Back</button></a>
+      </div>
+    </div>
+    
+  </form>
+</div>
+      
+  
+      
+<!--google Map API-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFj-aNbA-LYnqvNsOOCIlxkZQVW-cZkWE"></script>
+<script>
+    function showLocation(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        var latLngData = position.coords.latitude.toFixed(6) + "," + position.coords.longitude.toFixed(6);
+        var geocoder  = new google.maps.Geocoder();
+        var location  = new google.maps.LatLng(latitude, longitude); 
+        geocoder.geocode({'latLng': location}, function (results, status) {
+            if(status == google.maps.GeocoderStatus.OK) { 
+                var add=results[0].formatted_address; 
+                $("#address").val(add);
+                $("#realSubmit").click();
+            }
+        });
+    }
+
+    function errorHandler(err) {
+        if(err.code == 1) {
+            alert("Error: Access is denied!");
+        }else if( err.code == 2) {
+            alert("Error: Position is unavailable!");
+        }
+    }
+    function getLocation(){
+        if(navigator.geolocation){
+            var options = {timeout:60000};
+            navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
+        } else {
+            alert("Sorry, browser does not support geolocation!");
+        }
+    }
+    $('#test').click(getLocation);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<% include ../share/footer %>
+      
+</body>

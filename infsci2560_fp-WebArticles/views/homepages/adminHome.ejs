@@ -1,0 +1,60 @@
+<!-- Jiaxiang -->
+
+<% include ../share/header %>
+
+<div class="container text-center" style="margin-top: 100px;">
+
+  
+      <div class="card">
+            <h3 style="padding-left:15px;">All Blogs</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Title</th>
+                        <th style="text-align: center;">Description</th>
+                        <th style="text-align: center;">Time</th>
+                        <th style="text-align: center;min-width: 195px;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% blog.forEach(function(blog)
+                                { %>
+                                <tr>
+                                    <td style="text-align: center;line-height: 35px;"><%= blog.title.split(/\s+/).slice(0,3).join(" ") %></td>
+                                    <td style="text-align: center;line-height: 35px;"><%= blog.description.split(/\s+/).slice(0,3).join(" ")%>...</td>
+                                    <td style="text-align: center;line-height: 35px;"><%= blog.time %></td>
+                                    <td style="text-align: center;min-width: 195px;">
+                                        <div class="row">
+                                            <div class="col-md-6 col-6" style="text-align: right;">
+                                                <a class="btn btn-xs btn-warning blog-btn" href="/blogs/<%=blog._id %>/edit">Edit</a>
+                                            </div>
+
+                                            <div class="col-md-6 col-6" style="text-align: left;">
+                                              <form id="delete-form" action="/blogs/<%= blog._id%>?_method=DELETE" method="POST">
+                                                    <button class="btn btn-xs btn-danger blog-btn">Delete</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>   
+                   <% }); %>
+                </tbody>
+            </table>
+        </div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+</div>
+
+
+<% include ../share/footer %>

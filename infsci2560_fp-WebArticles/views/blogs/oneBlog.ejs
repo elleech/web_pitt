@@ -1,0 +1,349 @@
+<!-- Chuanlu & Yen-Ming -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebArticles</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheet/blogs.css" />
+  </head>
+  <body style="background: rgb(213, 218, 215)">
+    <% include ../share/header %>
+
+    <!-- oneBlog -->
+    <div class="container" id="one-blog">
+      <div
+        class="row justify-content-center"
+        style="margin-top: 30px; text-align: center"
+      >
+        <h3 id="blog-title"><%= blog.title %></h3>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <p>
+          <small class="text-muted">
+            <img
+              class="blog-img"
+              style="width: 4%"
+              src="<%= blog.author.image %>"
+            />&nbsp; <%= blog.author.username %>&nbsp;&nbsp;&nbsp;&nbsp;<%=
+            blog.time %><br />
+            <%= blog.address %>
+          </small>
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div>
+          <img
+            class="blog-img"
+            style="max-width: 100%"
+            src="<%=  blog.image %>"
+          />
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-left">
+        <div class="col-12">
+          <p style="margin-top: 40px; white-space: pre-line">
+            <%= blog.description %>
+          </p>
+        </div>
+      </div>
+
+      <!-- edit/delete -->
+      <% if(currentUser && blog.author.id.equals(currentUser._id)){ %>
+      <div class="row">
+        <div class="col-auto mr-auto"></div>
+
+        <div class="col-auto">
+          <div
+            class="btn-toolbar"
+            role="toolbar"
+            aria-label="Toolbar with button groups"
+          >
+            <!-- edit button -->
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+              <form action="/blogs/<%= blog._id %>/edit">
+                <button class="btn btn-warning blog-btn" style="width: 70px">
+                  Edit
+                </button>
+              </form>
+            </div>
+
+            <!-- delete button -->
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+              <form
+                id="delete-form"
+                action="/blogs/<%= blog._id%>?_method=DELETE"
+                method="POST"
+              >
+                <button class="btn btn-danger blog-btn" style="width: 70px">
+                  Delete
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
+
+      <!-- spacer line -->
+      <hr />
+    </div>
+
+    <!-- yec24 ~ Yen-Ming Chen -->
+
+    <!-- comment -->
+    <div class="container comment text-left">
+      <h5 class="mb-4">Comments</h5>
+
+      <!-- read/edit/delete -->
+      <% blog.comments.forEach((comment) => { %>
+      <div class="row">
+        <div class="col-1">
+          <img
+            class="blog-img"
+            style="width: 3rem"
+            src="<%= comment.author.image %>"
+          />
+        </div>
+
+        <div class="col-11">
+          <div class="row">
+            <div class="col">
+              <div
+                class="btn-toolbar"
+                role="toolbar"
+                aria-label="Toolbar with button groups"
+              >
+                <h6><%= comment.author.username %></h6>
+
+                <!-- edit button -->
+                <% if(currentUser && comment.author.id.equals(currentUser._id))
+                { %>
+                <div
+                  class="btn-group btn-xs ml-3"
+                  role="group"
+                  aria-label="First group"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-warning"
+                    data-toggle="modal"
+                    data-target="#commentModal-<%= comment._id %>"
+                    style="width: 70px; height: 30px; line-height: 14px"
+                  >
+                    Edit
+                  </button>
+                </div>
+
+                <!-- edit modal -->
+                <!-- need to tell modal which comment._id to point to inside modal id -->
+                <div
+                  class="modal fade"
+                  id="commentModal-<%= comment._id %>"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="commentModalLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered modal-lg"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <form
+                          action="/blogs/<%= blog._id %>/comments/<%= comment._id %>?_method=PUT"
+                          method="POST"
+                        >
+                          <div class="form-group">
+                            <label for="message-text" class="col-form-label"
+                              >Comment:</label
+                            >
+                            <textarea
+                              class="form-control"
+                              id="updateComment"
+                              name="updateComment"
+                              style="height: 150px"
+                            >
+<%= comment.comment[comment.comment.length-1] %></textarea
+                            >
+                          </div>
+
+                          <div class="form-group">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-dismiss="modal"
+                            >
+                              Cancel
+                            </button>
+                            <input
+                              type="submit"
+                              class="btn btn-success"
+                              value="Submit"
+                              style="width: 80px"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- delete button -->
+                <div
+                  class="btn-group btn-xs ml-2"
+                  role="group"
+                  aria-label="Second group"
+                >
+                  <form
+                    id="delete-form"
+                    action="/blogs/<%=blog._id %>/comments/<%=comment._id %>?_method=DELETE"
+                    method="POST"
+                  >
+                    <input
+                      type="submit"
+                      class="btn btn-xs btn-danger"
+                      value="Delete"
+                      style="width: 70px; height: 30px; line-height: 14px"
+                    />
+                  </form>
+                </div>
+
+                <% } %>
+              </div>
+            </div>
+
+            <div class="col text-right font-italic" style="font-size: 0.8rem">
+              <%= comment.time[comment.time.length-1] %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-10">
+              <%= comment.comment[comment.comment.length-1] %>
+            </div>
+
+            <!-- edit history button -->
+            <div class="col-2 text-right">
+              <% if (comment.edit) { %>
+              <button
+                type="button"
+                class="btn btn-sm btn-link"
+                data-toggle="modal"
+                data-target="#editHistoryModal-<%= comment._id %>"
+              >
+                Edit History
+              </button>
+              <% } %>
+            </div>
+
+            <!-- edit history modal -->
+            <!-- need to tell modal which comment._id to point to inside modal id -->
+            <div
+              class="modal fade"
+              id="editHistoryModal-<%= comment._id %>"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="editHistoryModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-lg"
+                role="document"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Edit History
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <% for (let i = 0; i < comment.comment.length; i++) { %>
+                    <div class="row">
+                      <div class="col"><%= comment.comment[i] %></div>
+                    </div>
+
+                    <div class="row">
+                      <div
+                        class="col text-muted text-right font-italic"
+                        style="font-size: 0.8rem"
+                      >
+                        <%= comment.time[i] %>
+                      </div>
+                    </div>
+                    <% } %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- spacer -->
+      <div class="row">
+        <p></p>
+      </div>
+
+      <% }) %>
+
+      <!-- spacer -->
+      <div class="row">
+        <p></p>
+      </div>
+
+      <!-- create -->
+      <form action="/blogs/<%= blog._id %>/comments" method="POST">
+        <% if (!currentUser) { %>
+        <div class="form-group">
+          <textarea
+            disabled
+            class="form-control"
+            id="comment"
+            placeholder="Please login to comment"
+            name="comment"
+            style="height: 150px"
+          ></textarea>
+        </div>
+
+        <% } else { %>
+        <div class="form-group">
+          <textarea
+            class="form-control"
+            id="comment"
+            placeholder="Add comment"
+            name="comment"
+            style="height: 150px"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button id="submit" class="btn btn-xl btn-info" type="submit">
+            Comment
+          </button>
+        </div>
+        <% } %>
+      </form>
+    </div>
+
+    <% include ../share/footer %>
+  </body>
+</html>
