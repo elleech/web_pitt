@@ -1,12 +1,12 @@
 ## Assignment 3 Part B - Database Your RESTful API
 
-The final RESTful website of countries and cities, using MongoDB as its database.
+The final RESTful website of countries and cities, using MongoDB as its database. It is designed for people to manage their future travel destinations during COVID-19 quarantine.
 
 Tools: Express.js, EJS (Embedded JavaScript), Bootstrap, and MongoDB Atlas
 
 _P.S. I don't own any photos of this website. They are resources from the Internet._
 
-# View Here ->
+# View Here -> [https://infsci2560-a3b-helloworld.herokuapp.com/](https://infsci2560-a3b-helloworld.herokuapp.com/)
 
 ## Documentation
 
