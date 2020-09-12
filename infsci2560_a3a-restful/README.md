@@ -1,10 +1,10 @@
 ## Assignment 3 Part A - Make a RESTful API
 
-My first RESTful API of countries and cities.
+My first quasi-RESTful API of countries and cities. Instead of connecting to a real database, it uses static JSON files as its database just to test out the functionality of the server scripts.
 
 Tools: Express.js, EJS (Embedded JavaScript), and Bootstrap
 
-# View Here ->
+# View Here -> [https://infsci2560-a3a-restful.herokuapp.com/](https://infsci2560-a3a-restful.herokuapp.com/)
 
 ## Instructions
 
