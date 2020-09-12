@@ -4,6 +4,8 @@ My very first website which displays two US lottery games - MegaMillions and Pow
 
 Tools: HTML, CSS, and JavaScript
 
+_P.S. I don't own any photos of this website. They are resources from the Internet._
+
 # View Here -> [https://elleech.github.io/infsci2560_a1-asgmt1lottery/](https://elleech.github.io/infsci2560_a1-asgmt1lottery/)
 
 ## Instructions
