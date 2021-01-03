@@ -14,10 +14,10 @@ _(Introduce the team and provide a high level description of the project. Be sur
 
 Team members:
 
-- Alhanouf Alqahtani (hanno) - Pitt ID: 4392341 - email: Ala184@pitt.edu
-- Chuanlu Chen (Lulu)- Pitt ID: 4342604 - email: chc303@pitt.edu
+- Alhanouf Alqahtani (Hanno) - Pitt ID: 4392341 - email: Ala184@pitt.edu
+- Chuanlu Chen (Lulu)- Pitt ID: 4342604 - email: Chc303@pitt.edu
 - Yen-Ming Chen (Ellee)- Pitt ID: 4371814- email: Yec24@pitt.edu
-- Jiaxiang Leng (jiaxiang)- Pitt ID:4292906 - email:Jil252@pitt.edu
+- Jiaxiang Leng (Jiaxiang)- Pitt ID:4292906 - email: Jil252@pitt.edu
 
 Our project is a blog web application for free articles that is called WebArticle. The user can explore
 the blog and view the posts/comments. However, if the user wants to post or comment on a post, the user should register first and create a profile. Also, there is an Admin view which is like the manager of the blog that he can edit and delete any users' posts.
@@ -40,27 +40,27 @@ _(Describe in detail what each member of the team did on the project.)_
 
 - Schemas
 
-  - Blog: _models/blog.js_ -> Chuanlu
-  - Comment: _models/comment.js_ -> Yen-Ming
+  - Blog: _models/blog.js_ -> Lulu
+  - Comment: _models/comment.js_ -> Ellee
   - User: _models/user.js_ -> Jiaxiang
 
 - Routes
 
-  - Server: _server.js_ ->Alhanouf & Jiaxiang
-  - Middleware: _middleware/index.js_ -> Alhanouf
-  - Blog: _routes/blog.js_ -> Chuanlu
-  - Comment: _routes/comment.js_ -> Yen-Ming
-  - Index: _routes/index.js_ -> Alhanouf
+  - Server: _server.js_ -> Hanno & Jiaxiang
+  - Middleware: _middleware/index.js_ -> Hanno
+  - Blog: _routes/blog.js_ -> Lulu
+  - Comment: _routes/comment.js_ -> Ellee
+  - Index: _routes/index.js_ -> Hanno
   - User: _routes/user.js_ -> Jiaxiang
 
 - Views
 
-  - Homepage (cover): _landing.ejs_ -> Alhanouf
-  - Login: _login.ejs_ -> Alhanouf
-  - Sign up: _register.ejs_ -> Alhanouf
+  - Homepage (cover): _landing.ejs_ -> Hanno
+  - Login: _login.ejs_ -> Hanno
+  - Sign up: _register.ejs_ -> Hanno
   - User/Admin: _userHome.ejs_ & _adminHome.ejs_ -> Jiaxiang
-  - Blogs: _allBlog.ejs_ & _editBlog.ejs_ & _newBlog.ejs_ & _oneBlog.ejs_ & _searchBlog.ejs_ -> Chuanlu
-  - Comment (within one blog): _oneBlog.ejs_ -> Yen-Ming
+  - Blogs: _allBlog.ejs_ & _editBlog.ejs_ & _newBlog.ejs_ & _oneBlog.ejs_ & _searchBlog.ejs_ -> Lulu
+  - Comment (within one blog): _oneBlog.ejs_ -> Ellee
 
 ## Technical Architecture
 
