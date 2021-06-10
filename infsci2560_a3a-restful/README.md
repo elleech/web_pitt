@@ -1,12 +1,30 @@
 ## Assignment 3 Part A - Make a RESTful API
 
-My first quasi-RESTful API of countries and cities. Instead of connecting to a real database, it uses static JSON files as its database just to test out the functionality of the server scripts.
+My first quasi-RESTful API of countries and cities. Instead of connecting to a real database, it uses static JSON files as the database just to test out the functionality of the server scripts.
 
-Tools: Express.js, EJS (Embedded JavaScript), and Bootstrap
+Tools: **_Express.js_**, **_EJS (Embedded JavaScript)_**, and **_Bootstrap_**
 
-# View Here -> [https://infsci2560-a3a-restful.herokuapp.com/](https://infsci2560-a3a-restful.herokuapp.com/)
+### Website Pages Preview:
 
-## Instructions
+- Home
+
+  ![Image](_images/infsci2560_a3a-restful_01-home.png)
+
+- Database
+
+  ![Image](_images/infsci2560_a3a-restful_02-database.png)
+
+- Countries
+
+  ![Image](_images/infsci2560_a3a-restful_03-countries.png)
+
+- Cities
+
+  ![Image](_images/infsci2560_a3a-restful_04-cities.png)
+
+---
+
+## Assignment Instructions
 
 This is a two-part project. In this first part you are going to take what we've been learning about RESTful APIs and create your own API using the REST architecture and Express.js.
 
@@ -16,11 +34,11 @@ You can create an API that models any kind of resources you want. It could be mo
 
 You will need to implement your API using Express and Glitch. Here is a good tutorial on designing REST APIs from [restfulapi.net](https://restfulapi.net/rest-api-design-tutorial-with-example/).
 
-## Testing you API
+### Testing you API
 
 You may find it helpful to use an API testing tool. There are many to choose from or you can use `curl` on the command line. I recommend the the [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) Chrome plugin or desktop application to issue specific HTTP requests and send/receive JSON payloads.
 
-## Steps
+### Steps
 
 1. Read this tutorial on designing REST APIs from [restfulapi.net](https://restfulapi.net/rest-api-design-tutorial-with-example/).
 2. **Remix** [this project to get started](https://glitch.com/~infsci2560-assignment3-template).
@@ -30,7 +48,7 @@ You may find it helpful to use an API testing tool. There are many to choose fro
 6. You should have a minimum of 6 HTTP operations which include one of: HTTP GET, POST, PUT and DELETE.
 7. Create Express routes that map endpoints to handler functions that will return appropriate values or responses. For operations that modify a resource (PUT, PATCH, POST) you have a placeholder function and return an HTTP SUCCESS code. You do not need to modify your static JSON files to create persistent data (you will do this in part B).
 
-## Expectations
+### Expectations
 
 - At least six endpoints for at least 2 different types of resources (e.g. `GET /student`, `POST /student`, `GET /buildings`, etc.).
   - For our purposes, an endpoint would be a URL and an HTTP method. So if you implement GET and POST methods for 3 URLS (`/student`, `/student/:id`, and `/courses`) you will have 6 endpoints.
