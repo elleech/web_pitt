@@ -11,10 +11,28 @@ _P.S. I don't own any photos of this website. They are resources from the Intern
 ### Website Pages Preview:
 
 - API Doc Overview
+
+  ![Image](_images/infsci2560_a3b-HelloWorld-01_apidoc.png)
+
 - Database
+
+  ![Image](_images/infsci2560_a3b-HelloWorld-02_database.png)
+
 - Countries
+
+  ![Image](_images/infsci2560_a3b-HelloWorld-03_countries.png)
+
+  ![Image](_images/infsci2560_a3b-HelloWorld-03a_country.png)
+
+  ![Image](_images/infsci2560_a3b-HelloWorld-03b_city.png)
+
 - Cities
+
+  ![Image](_images/infsci2560_a3b-HelloWorld-04_cities.png)
+
 - Query
+
+  ![Image](_images/infsci2560_a3b-HelloWorld-05_search.png)
 
 ### Documentation
 
