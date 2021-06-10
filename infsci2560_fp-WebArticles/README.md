@@ -8,7 +8,12 @@ _P.S. We don't own any photos of this website. They are resources from the Inter
 
 # View Here -> [https://infsci2560-fp-webarticles.herokuapp.com/](https://infsci2560-fp-webarticles.herokuapp.com/)
 
-## Introduction
+### Website Pages Preview:
+
+- Home
+- 
+
+### Introduction
 
 _(Introduce the team and provide a high level description of the project. Be sure to include full names and Pitt IDs.)_
 
@@ -22,7 +27,7 @@ Team members:
 Our project is a blog web application for free articles that is called WebArticle. The user can explore
 the blog and view the posts/comments. However, if the user wants to post or comment on a post, the user should register first and create a profile. Also, there is an Admin view which is like the manager of the blog that he can edit and delete any users' posts.
 
-## Objective
+### Objective
 
 _(Describe with more specific details what your objectives and goals are for the project. What problems did you want to solve or what did you want to learn in developing this application? What features, beyond the ones listed in the assignment requirements, did you implement?)_
 
@@ -34,7 +39,7 @@ Also, learning how to create a Blog as a part of social media is essential becau
 One of the features we implemented beyond the ones listed is google API to show the location of the user when he posts an article or makes a comment. We also
 made this feature to be optional for the user if he wants to share the location or not for privacy concerns.
 
-## Team member’s contributions
+### Team member’s contributions
 
 _(Describe in detail what each member of the team did on the project.)_
 
@@ -62,7 +67,7 @@ _(Describe in detail what each member of the team did on the project.)_
   - Blogs: _allBlog.ejs_ & _editBlog.ejs_ & _newBlog.ejs_ & _oneBlog.ejs_ & _searchBlog.ejs_ -> Lulu
   - Comment (within one blog): _oneBlog.ejs_ -> Ellee
 
-## Technical Architecture
+### Technical Architecture
 
 _(What are the libraries, frameworks, and other technologies you used and how did you put them together. Use the MVC conceptual model to provide a guide (i.e. what are the models/views/controllers and what do they do).)_
 
@@ -104,7 +109,7 @@ _(What are the libraries, frameworks, and other technologies you used and how di
 
     - We have created multiple and specific routes for various pages in our application. Various control functionalities have been implemented in the entire project.
 
-## Challenges
+### Challenges
 
 _(Discuss any challenges you faced in trying to develop this app. Were there libraries or technologies you wanted to use but we’re frustrating? Where there features you couldn’t get working?)_
 
@@ -118,7 +123,7 @@ _(Discuss any challenges you faced in trying to develop this app. Were there lib
 
   We use a fake button to trick form submission, but in the meanwhile, trigger Google API. It works fine with creating a new blog. However, for the comment section, since we have 2 forms (create & edit) in the same ejs file, the whole "fake button" mechanism couldn't work. The ejs just don't know which form a user is submitting.
 
-## Future Work
+### Future Work
 
 _(What features would you like to add to your application? If you had more time what technologies would you like to learn?)_
 
@@ -128,7 +133,7 @@ _(What features would you like to add to your application? If you had more time 
 
 - Image can be uploaded locally instead of typing the image url address.
 
-## Conclusion
+### Conclusion
 
 _(Reflect upon the web technologies and standards you learned in this course, did you learn what you wanted? What technologies or standards do you think would be useful in future iterations of this course?)_
 
@@ -138,7 +143,7 @@ For the front-end, we gain useful skills to design the interface with three prim
 For the back-end, we have a more profound knowledge of server development with the express and Node.js frameworks and MongoDB.
 Besides, this final project provides us an excellent chance to experience collaborative web development. Also, we have learned how to build a website from scratch. What we have learned and applied this semester is a perfect start for future work.
 
-## Documentation
+### Documentation
 
 _(List any resources that you used in creating this project.)_
 
