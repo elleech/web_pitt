@@ -10,8 +10,37 @@ _P.S. We don't own any photos of this website. They are resources from the Inter
 
 ### Website Pages Preview:
 
-- Home
-- 
+- Landing
+
+  ![Image](_images/infsci2560_fp-WebArticles-01_landing.png)
+
+- Login & Sign Up
+
+  ![Image](_images/infsci2560_fp-WebArticles-01a_login.png)
+
+  ![Image](_images/infsci2560_fp-WebArticles-01b_register.png)
+
+- All Blogs
+
+  ![Image](_images/infsci2560_fp-WebArticles-02_allblogs.png)
+
+- Blog
+
+  ![Image](_images/infsci2560_fp-WebArticles-03a_author.png)
+
+- Create/Edit Blog
+
+  ![Image](_images/infsci2560_fp-WebArticles-03b_edit.png)
+
+  ![Image](_images/infsci2560_fp-WebArticles-04_create.png)
+
+- Profile
+
+  ![Image](_images/infsci2560_fp-WebArticles-05_profile.png)
+
+- Admin Page
+
+  ![Image](_images/infsci2560_fp-WebArticles-06_admin.png)
 
 ### Introduction
 
