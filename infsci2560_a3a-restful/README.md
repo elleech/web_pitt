@@ -8,19 +8,19 @@ Tools: **_Express.js_**, **_EJS (Embedded JavaScript)_**, and **_Bootstrap_**
 
 - Home
 
-  ![Image](_images/infsci2560_a3a-restful_01-home.png)
+  ![Image](_images/infsci2560_a3a-restful-01_home.png)
 
 - Database
 
-  ![Image](_images/infsci2560_a3a-restful_02-database.png)
+  ![Image](_images/infsci2560_a3a-restful-02_database.png)
 
 - Countries
 
-  ![Image](_images/infsci2560_a3a-restful_03-countries.png)
+  ![Image](_images/infsci2560_a3a-restful-03_countries.png)
 
 - Cities
 
-  ![Image](_images/infsci2560_a3a-restful_04-cities.png)
+  ![Image](_images/infsci2560_a3a-restful-04_cities.png)
 
 ---
 
