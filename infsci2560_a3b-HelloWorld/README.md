@@ -2,13 +2,21 @@
 
 The final RESTful website of countries and cities, using MongoDB as its database. It is designed for people to manage their future travel destinations during COVID-19 quarantine.
 
-Tools: Express.js, EJS (Embedded JavaScript), Bootstrap, and MongoDB Atlas
+Tools: **_Express.js_**, **_EJS (Embedded JavaScript)_**, **_Bootstrap_**, and **_MongoDB Atlas_**
 
 _P.S. I don't own any photos of this website. They are resources from the Internet._
 
 # View Here -> [https://infsci2560-a3b-helloworld.herokuapp.com/](https://infsci2560-a3b-helloworld.herokuapp.com/)
 
-## Documentation
+### Website Pages Preview:
+
+- API Doc Overview
+- Database
+- Countries
+- Cities
+- Query
+
+### Documentation
 
 _Please see the homepage (index) for visualized documentation_
 
@@ -70,7 +78,9 @@ Cities
   - Read data from the database by the given query name
   - Expected response: 200 OK, returns a web page showing list(s) of data found.
 
-## Instructions
+---
+
+## Assignment Instructions
 
 This is a two-part project. In this first part of this project you designed your own RESTful API that uses the REST architecture using Express.js. In the second part of this project, we are going to replace the static .json file database with a database.
 
@@ -78,11 +88,11 @@ This is a two-part project. In this first part of this project you designed your
 
 You will need to implement your API using Express and Glitch. Here is a good tutorial on designing REST APIs from [restfulapi.net](https://restfulapi.net/rest-api-design-tutorial-with-example/). I expect for you to follow the principles and approach described in this tutorial. Specifically on _Create Model URIs_.
 
-## Testing you API
+### Testing you API
 
 You may find it helpful to use an API testing tool. There are many to choose from or you can use `curl` on the command line. I recommend the the [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) desktop application to issue specific HTTP requests and send/receive JSON payloads.
 
-## Steps
+### Steps
 
 1. Create a database for this project in your MongoDB instance. (Assuming you completed Activity 9, to setup MongoDB)
 2. Connect your project to the MongoDB database you created in Activity 9. Make sure to add mongoose to your list of dependencies in the `package.json` file. The dependencies section should now look like: `"dependencies": { "express": "^4.16.4", "mongoose": "^5.7.7", "ejs": "^2.7.1" },`
@@ -94,7 +104,7 @@ You may find it helpful to use an API testing tool. There are many to choose fro
 8. You should also have your two templates from part A, using EJS to display the results of your operations. Since we are using EJS, you are expected to pass & display variables. E.g. On a GET request, nicely format and display the data returned (e.g. course title and description).
 9. Map and render the response for each HTTP operation to an appropriate view template. (e.g. the view template for a student will be different for a view template for a course.)
 
-## Expectations
+### Expectations
 
 - Same expectations as part A. In other words, if there is something you omitted or did incorrectly, this is your opportunity to redo it for credit.
 - At least six endpoints for at least 2 different resources (e.g. `GET /student`, `POST /student`, `GET /buildings`).
