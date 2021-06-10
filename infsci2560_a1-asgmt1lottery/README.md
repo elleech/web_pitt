@@ -51,7 +51,7 @@ personal website eith pages about your hobbies, your coursework, some "blog post
 write a lot of content for posts). I will leave it to you to think about what kind of website you want to
 make. Just remember, it must be coded by hand!
 
-### HTML
+#### HTML
 
 - At least **5**, well structured, HTML pages - Link the pages together with a navigation pane.
 - Use a variety of HTML elements - Each page should have headers, and paragraphs with some text content. Your assignment should have each of the following elements:
@@ -65,7 +65,7 @@ make. Just remember, it must be coded by hand!
 
 - Validate your HTML Syntax using the [W3C Markup Validation Service](https://validator.w3.org/) and correct any errors.
 
-### CSS
+#### CSS
 
 - Create at least **6** unique CSS declaration blocks (that start with a `{` and end with `}`)
 - Create at least **12** unique CSS rules across the 6 declaration blocks (rules end in a semicolon (`;`))
@@ -76,7 +76,7 @@ make. Just remember, it must be coded by hand!
 - Use CSS to style repeating navigation elements (e.g. nav link to other pages)
 - Use CSS to improve the overall aesthetics of your site. This is subjective, but there are some basic priciples you can use (text isn't small, colors don't clash, design is consistent, spelling/grammar, etc.).
 
-### Javascript
+#### Javascript
 
 - Write at least **2** unique Javascript functions that access HTML elements, modify the page content, and/or create some interactivity.
 - Attach a JavaScript event listeners to 2 specific elements and have them change the style and structure of the page (like showing or hiding list items or inverting all of the colors on the site).
