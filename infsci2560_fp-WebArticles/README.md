@@ -2,7 +2,7 @@
 
 A blogging website that allows users to signup, login in, post/update/delete articles and comments.
 
-Tools: Express.js, Passport.js, EJS (Embedded JavaScript), Bootstrap, and MongoDB Atlas
+Tools: **_Express.js_**, **_Passport.js_**, **_EJS (Embedded JavaScript)_**, **_Bootstrap_**, and **_MongoDB Atlas_**
 
 _P.S. We don't own any photos of this website. They are resources from the Internet._
 
