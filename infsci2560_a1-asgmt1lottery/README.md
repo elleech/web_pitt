@@ -2,13 +2,37 @@
 
 My very first website which displays two US lottery games - MegaMillions and PowerBall - and shows number drawing frequencies by the help of python and Google Chart API. It also picks random weighted numbers for users as a reference of buying thier next lottery tickets!
 
-Tools: HTML, CSS, and JavaScript
+Tools: **_HTML_**, **_CSS_**, and **_JavaScript_**
 
 _P.S. I don't own any photos of this website. They are resources from the Internet._
 
 # View Here -> [https://elleech.github.io/infsci2560_a1-asgmt1lottery/](https://elleech.github.io/infsci2560_a1-asgmt1lottery/)
 
-## Instructions
+### Website Pages Preview:
+
+- Home
+
+  ![Image](_images/infsci2560_a1-asgmt1lottery-01_home.png)
+
+- MegaMillions
+
+  ![Image](_images/infsci2560_a1-asgmt1lottery-02_megamillions.png)
+
+- PowerBalls
+
+  ![Image](_images/infsci2560_a1-asgmt1lottery-03_powerball.png)
+
+- Buy Online
+
+  ![Image](_images/infsci2560_a1-asgmt1lottery-04_buyonline.png)
+
+- About Me
+
+  ![Image](_images/infsci2560_a1-asgmt1lottery-05_aboutme.png)
+
+---
+
+## Assignment Instructions
 
 In this assignment, you will build upon the activities from weeks 1, 2, and 3. Your task is to hand-code a website using HTML, CSS, and Javascript. You must code everything from scratch using vanilla HTML, CSS and JavaScript. No templates or frameworks are allowed in this assignment (save that for assignment two). You are free to Google around for "How do I do X in HTML/CSS/JavaScript." If you find a solution to a particular problem, be sure to include this information in the Coversheet for this assignment.
 
@@ -56,23 +80,3 @@ make. Just remember, it must be coded by hand!
 
 - Write at least **2** unique Javascript functions that access HTML elements, modify the page content, and/or create some interactivity.
 - Attach a JavaScript event listeners to 2 specific elements and have them change the style and structure of the page (like showing or hiding list items or inverting all of the colors on the site).
-
-### Your Project
-
-#### ← README.md
-
-That's this file, where you can tell people what your cool website does and how you built it.
-
-#### ← index.html
-
-Where you'll write the content of your website.
-
-#### ← style.css
-
-CSS files add styling rules to your content.
-
-#### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-\ ゜ o ゜)ノ
